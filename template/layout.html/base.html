@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{tittle}} </title>
+     {% bootstrap_css %}
+
+     {%block css %}{% endblock %} 
+</head>
+<body>
+    <header>
+        { % bootstrap_messages %}
+        <main>
+            {% block content %}{%endnlock %}
+        </main>
+    </header>
+
+    <footer>
+       { %bootstrap_javascript %}
+       {%block js %} {%endblock %}
+    </footer>
+</body>
+</html>
